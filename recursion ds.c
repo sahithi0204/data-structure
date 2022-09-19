@@ -1,17 +1,18 @@
 #include<stdio.h>
+int facto(int n);
 int main()
 {
-int n1=0,n2=1,n3,i,number;
-printf("enter the number of elements");
-scanf("%d",&number);
-printf("%d%d",n1,n2);
-for (i=2;i<number;i++)
+ int facto(int n),num;
+ printf("enter the number to find the factorial of a number");
+ scanf("%d",&num);
+ int facto(int n);
+ printf("factorial of %d is %d",num,facto(num));
+ return 0;
+}
+int facto(int n)
 {
-n3=n1+n2;
-printf("%d\n",n3);
-n1=n2;
-n2=n3;
+ if (n==0)
+ return 1;
+ if(n>1)
+ return (n*facto(n-1));
 }
-return 0;
-}
-
