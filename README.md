@@ -159,6 +159,7 @@ printf("%d%d",0,1);
 printfibonacci(n-2);
 }
 ![fibonacci using recursion output c](https://user-images.githubusercontent.com/113923373/191204821-04c0b984-9a41-4749-8867-8b5f4099040a.png)
+7.program to implement Array operations such as Insert, Delete and Display:
 
 
 
