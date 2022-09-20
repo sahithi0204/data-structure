@@ -160,6 +160,29 @@ printfibonacci(n-2);
 }
 ![fibonacci using recursion output c](https://user-images.githubusercontent.com/113923373/191204821-04c0b984-9a41-4749-8867-8b5f4099040a.png)
 7.program to implement Array operations such as Insert, Delete and Display:
+#include <stdio.h>
+int main()
+{
+ int array[50], position, c, n, value;
+ printf("Enter number of elements in the array\n");
+ scanf("%d", &n);
+ printf("Enter %d elements\n", n);
+ for (c = 0; c < n; c++)
+ scanf("%d", &array[c]);
+ printf("Please enter the location where you want to insert an new element\n");
+ scanf("%d", &position);
+ printf("Please enter the value\n");
+ scanf("%d", &value);
+ for (c = n - 1; c >= position - 1; c--)
+ array[c+1] = array[c];
+ array[position-1] = value;
+ printf("Resultant array is\n");
+ for (c = 0; c <= n; c++)
+ printf("%d\n", array[c]);
+ return 0;
+}
+![array operations output c](https://user-images.githubusercontent.com/113923373/191209712-3c9923ff-da9a-47ae-9372-db44094e0ca0.png)
+
 
 
 
